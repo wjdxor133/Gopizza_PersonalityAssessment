@@ -1,13 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import * as React from "react";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import Exam from "./pages/candidate/exam/Exam";
+import Info from "./pages/candidate/Info/Info";
 
-class Routes extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Switch></Switch>
-      </Router>
-    );
-  }
-}
+const Routes = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Info} />
+        <Route exact path="/exam" component={Exam} />
+        <Route component={() => <Redirect to="/" />} />
+      </Switch>
+    </BrowserRouter>
+  );
+};
 export default Routes;
