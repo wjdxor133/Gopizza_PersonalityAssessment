@@ -20,8 +20,6 @@ interface parsedType {
 }
 
 const Activate = ({ history, location }: propsType) => {
-  console.log("props", history);
-  console.log("props", location);
   const queryString = require("query-string");
 
   const certification = async (parsed: parsedType) => {
@@ -32,7 +30,7 @@ const Activate = ({ history, location }: propsType) => {
       })
       .then((res) => {
         alert("성공" + res);
-        history.push();
+        // history.push();
       })
       .catch((error) => {
         console.log("error", error.res);
@@ -42,7 +40,7 @@ const Activate = ({ history, location }: propsType) => {
   useEffect(() => {
     const parsed = queryString.parse(location.search);
     certification(parsed);
-  }, []);
+  }, [location.search, queryString]);
 
   return <div></div>;
 };
