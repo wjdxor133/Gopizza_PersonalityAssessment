@@ -36,21 +36,6 @@ const Exam = () => {
     // });
   }, []);
 
-  // const testSubmit = () => {
-  //   let check_select: any = data.id.length;
-  //   for (let i = 0; i < check_select; i++) {
-  //     if (data.id[i].checked === true) {
-  //     }
-  //   }
-  // };
-
-  // const collectData = () => {
-  //   let newData = new FormData();
-  //   newData.append("id:", id);
-  //   newData.append("point:", idx);
-  //   axios.post(`${API}`, newData);
-  // };
-
   return (
     <ExamWrap>
       <Container>
