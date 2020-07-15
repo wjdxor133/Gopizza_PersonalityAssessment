@@ -1,26 +1,17 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+// import { SampleProvider } from "../../../SampleContext";
+import { RouteComponentProps } from "react-router-dom";
 import { API } from "../../../config";
-
-interface propsType {
-  history: object;
-  location: locationType;
-}
-
-interface locationType {
-  pathname: string;
-  search: string;
-  hash: string;
-  state: undefined;
-}
 
 interface parsedType {
   token: string;
   uid: string;
 }
 
-const Activate = ({ history, location }: propsType) => {
+const Activate = ({ history, location }: RouteComponentProps) => {
   const queryString = require("query-string");
+  const parsed = queryString.parse(location.search);
 
   const certification = async (parsed: parsedType) => {
     await axios
@@ -28,9 +19,9 @@ const Activate = ({ history, location }: propsType) => {
         token: parsed.token,
         uid: parsed.uid,
       })
-      .then((res) => {
-        alert("성공" + res);
-        // history.push();
+      .then(() => {
+        localStorage.setItem("uid", parsed.uid);
+        history.push("./Info");
       })
       .catch((error) => {
         console.log("error", error.res);
@@ -38,9 +29,8 @@ const Activate = ({ history, location }: propsType) => {
   };
 
   useEffect(() => {
-    const parsed = queryString.parse(location.search);
     certification(parsed);
-  }, [location.search, queryString]);
+  }, [parsed]);
 
   return <div></div>;
 };
