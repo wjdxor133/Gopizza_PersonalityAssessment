@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Category1st = () => {
   return (
-    <CategoryWrap>
+    <Test1CategoryWrap>
       <table>
         <Thead>
           <tr>
@@ -24,7 +24,7 @@ const Category1st = () => {
               나는 의사결정을 하기 전에 모든 관점에서 문제를 신중히 생각한다.
             </td>
             <td>
-              <input type="radio" name="Cetegory1stQ1" value="Q1-1" />
+              <input type="radio" name="Cetegory1stQ1" value="Q1-1" />;
             </td>
             <td>
               <input type="radio" name="Cetegory1stQ1" value="Q1-2" />
@@ -121,13 +121,13 @@ const Category1st = () => {
           </Q5tr>
         </Tbody>
       </table>
-    </CategoryWrap>
+    </Test1CategoryWrap>
   );
 };
 
 export default Category1st;
 
-const CategoryWrap = styled.section`
+const Test1CategoryWrap = styled.section`
   width: 100%;
   margin-top: 5%;
   table {

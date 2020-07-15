@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Category2nd = () => {
   return (
-    <CategoryWrap>
+    <Test2CategoryWrap>
       <table>
         <Thead>
           <tr>
@@ -124,13 +124,13 @@ const Category2nd = () => {
           </Q5tr>
         </Tbody>
       </table>
-    </CategoryWrap>
+    </Test2CategoryWrap>
   );
 };
 
 export default Category2nd;
 
-const CategoryWrap = styled.section`
+const Test2CategoryWrap = styled.section`
   width: 100%;
   margin-top: 5%;
   table {
