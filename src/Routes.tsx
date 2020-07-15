@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from "../src/pages/admin/Login/Login";
-import Activate from "../src/pages/Info/Activate";
+import Login from "./pages/admin/Login/Login";
+import Activate from "./pages/candidate/Info/Activate";
 import Info from "./pages/candidate/Info/Info";
 import Exam from "./pages/candidate/exam/Exam";
 
