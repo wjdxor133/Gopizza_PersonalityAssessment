@@ -18,7 +18,16 @@ const Category1st = () => {
           </tr>
         </Thead>
         <Tbody>
-          <Q1tr>
+          {() => {
+            for (let i = 0; i < 6; i++) {
+              console.log(i);
+              for (let j = 0; j < 6; j++) {
+                console.log(j);
+              }
+            }
+          }}
+          ;
+          {/* <Q1tr>
             <td>A</td>
             <td>
               나는 의사결정을 하기 전에 모든 관점에서 문제를 신중히 생각한다.
@@ -38,7 +47,7 @@ const Category1st = () => {
             <td>
               <input type="radio" name="Cetegory1stQ1" value="Q1-5" />
             </td>
-          </Q1tr>
+          </Q1tr> */}
           <Q2tr>
             <td>B</td>
             <td>나는 명령을 하고 일을 진행시키기를 좋아한다.</td>
