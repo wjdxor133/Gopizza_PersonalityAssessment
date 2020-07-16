@@ -21,9 +21,6 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6{
     font-family:'Maven Pro', sans-serif;
   }
-  ol, ul, li {
-    list-style: none;
-  }
   img {
     display: block;
   }
