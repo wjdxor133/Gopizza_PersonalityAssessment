@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GOPIZZA 고피자 기업협업 인턴쉽 프로젝트
 
-## Available Scripts
+## Introduction
+- 고피자 기업협업 한달 입턴쉽 프로젝트 입니다. 
+- 프로젝트 기간 : 2020.6. ~ 2020.7.17 (2주)
+- Front-end 2명, Back-end 2명 총 4명의 개발자가 협업을 진행하였습니다.  
 
-In the project directory, you can run:
+## 목표
+- 고객관리 페이지 구현
 
-### `npm start`
+## 사용한 기술
+- Front-End: ReactJS, TypeScript, Javascript, React Hooks, Styled-Components
+- Back-End: Django, MySQL, 아마존 rds
+- Deployment: AWS
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 기능
+- 카카오 API를 발급 받아 고피자 카카오 플러스 친구 버튼 구현
+- 고피자 인스타그램 웹 페이지 연동 구현
+- 고피자 유투브 영상 Back-end API 받아 Axios를 이용해 통신하고, Active Tap 기능 구현
+- Typescript를 이용하여 타입 체크
+- 라이브러리를 사용하여 이미지 슬리이드 기능 구현
+- 카카오 API를 발급받아 카카오 맵에 고피자 매장 위치 마크 띄우기 구현
+- 고객의 현재 위치를 맵에 띄우고, 5키로 이내 가까운 매장 표시 
